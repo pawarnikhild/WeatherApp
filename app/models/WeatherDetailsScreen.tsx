@@ -1,13 +1,14 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import { useRoute } from '@react-navigation/native';
+import { RouteProp, useRoute } from '@react-navigation/native';
 
+import { StackNavigationParamList } from '../routes/StackNavigation';
 
 import WeatherDetailsScreenView from '../views/WeatherDetailsScreenView'
 
 const WeatherDetailsScreen = () => {
-  const route = useRoute();
+  const route = useRoute<RouteProp<StackNavigationParamList, 'WeatherDetails'>>();
   const { weatherData } = route.params;
+
   return (
     <WeatherDetailsScreenView weatherData={weatherData} />
   )

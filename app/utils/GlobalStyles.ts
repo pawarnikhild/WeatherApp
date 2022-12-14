@@ -4,14 +4,16 @@ import { AppColor } from './StyleConstants';
 export default StyleSheet.create({
     appContainer: {
         flex: 1,
-        backgroundColor: AppColor.white,
+        backgroundColor: AppColor.black,
     },
-    centerContainer: {
+    VerticalCenterContainer: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',
     },
     horizontalCenterContainer: {
+        flex: 1,
         alignItems: 'center',
+        backgroundColor: AppColor.white,
+        padding: 10,
     },
 });

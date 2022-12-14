@@ -7,12 +7,11 @@ export default StyleSheet.create({
         width: 200,
         margin: 16,
         borderWidth: 2,
-        borderColor: 'black'
+        borderColor: AppColor.black
     },
     capitalName: {
         fontSize: FontSize.Title,
         fontWeight: 'bold',
-        // textAlign: 'center',
         margin: 10
     },
     row : {
@@ -22,18 +21,12 @@ export default StyleSheet.create({
     field: {
         fontSize: FontSize.Large,
         fontWeight: 'bold',
-        // textAlign: 'center',
-        // margin: 10
     },
     data: {
         fontSize: FontSize.Large,
-        // fontWeight: 'bold',
-        // textAlign: 'center',
-        // margin: 20
     },
     CustomButton: {
         marginTop: 20,
         width: 200
     },
-    
 });

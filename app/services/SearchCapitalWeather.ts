@@ -5,11 +5,8 @@ export const searchCapitalWeather = async ( payload: string ) =>{
     let result  = null;
     try {
         if(payload) {
-            console.log("payload",payload);
-
             const response = await fetch(`${baseURL}?access_key=${key}&query=${payload}`)
             const JSONResponse = await response.json();
-            // console.log('JSONResponse', JSONResponse)
             result = JSONResponse;
             
             // // American result
@@ -17,13 +14,11 @@ export const searchCapitalWeather = async ( payload: string ) =>{
         } else {
             console.log("Could not get paylod");
         }
-        
     } catch (error) {
         // alert("Something went wrong", error);
         console.log(error);        
     }
     return result;
-    // console.log('result', result)
     
 
 }

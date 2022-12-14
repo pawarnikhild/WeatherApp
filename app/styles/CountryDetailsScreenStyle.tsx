@@ -12,7 +12,6 @@ export default StyleSheet.create({
     countryName: {
         fontSize: FontSize.Title,
         fontWeight: 'bold',
-        // textAlign: 'center',
         margin: 10
     },
     row : {
@@ -28,7 +27,6 @@ export default StyleSheet.create({
     },
     CustomButton: {
         marginTop: 20,
-        width: 200
+        width: '100%'
     },
-    
 });

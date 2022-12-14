@@ -3,13 +3,13 @@ import { StyleSheet, Text, View, TextInput, ViewStyle } from "react-native";
 import { FontSize } from "../utils/StyleConstants";
 
 type CustomTextInputProps = {
-  // style: React.CSSProperties,
-  style: ViewStyle;
   placeholder: string;
   placeholderColor: string;
+  style: ViewStyle;
   value: string;
   onChnageText: (active: string) => void;
 };
+
 const CustomTextInput = (props: CustomTextInputProps) => {
   return (
     <TextInput
